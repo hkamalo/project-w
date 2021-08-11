@@ -25,8 +25,8 @@ const useStyles = makeStyles({
   },
   kidCategory: {
     margin: 5,
-    width: 640*0.9,
-    height: 480*0.6,
+    width: 640 * 0.9,
+    height: 480 * 0.6,
     border: '1px solid yellow',
     textAlign: 'center',
     display: 'flex',
