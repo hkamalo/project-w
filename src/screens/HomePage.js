@@ -2,12 +2,14 @@ import React from 'react';
 import { Link } from 'react-tiger-transition';
 import { makeStyles, createTheme } from '@material-ui/core/styles';
 import { Fade } from '@material-ui/core';
+import homeImage from '../images/clem-onojeghuo-24vjqGCu0pI-unsplash.jpg';
+import CategoriesSelect from '../components/ForHomePage/CategoriesSelect';
 
 const theme = createTheme({
   overrides: {
     MuiButton: {
       label: {
-        color: '#f1f1f1',
+        color: '#f1ff1',
       },
     },
   },
@@ -16,9 +18,24 @@ const theme = createTheme({
 const useStyles = makeStyles({
   root: {
     '& > *': {
-      margin: 10,
+      width: '100vw',
+      height: '100vh',
+   
     },
   },
+  homeImg: {
+    margin: 0,
+    overflow: 'hidden'
+  },
+  text: {
+    position: 'absolute',
+    left: 20,
+    top: 10 * 15,
+    width: '30em',
+    color: 'white',
+  },
+  image: {
+  }
 });
 
 export default function HomePage() {
@@ -26,17 +43,17 @@ export default function HomePage() {
 
   return (
     <>
-      <div className={classes.header}>
-        <Fade
-          in
-          direction="right"
-          timeout={2100}
-          style={{ transitionDelay: '800ms' }}
-        >
-          <div>
-            <p>text</p>
-          </div>
-        </Fade>
+      <div className={classes.root}>
+        <div className={classes.homeImg}>
+          <img className={classes.image} src={homeImage} alt="dress-home" />
+        </div>
+        <div className={classes.text}>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. In a hic
+          laboriosam incidunt quibusdam cupiditate. Culpa facilis, corrupti
+          distinctio fuga ratione assumenda iste maiores, explicabo in, eligendi
+          minima repellendus iusto!
+        </div>
+        <CategoriesSelect />
       </div>
     </>
   );

@@ -9,7 +9,7 @@ import PricesPage from '../../screens/PricesPage';
 
 const useStyles = makeStyles({
   main: {
-    background: '#051622',
+    background: 'white',
     color: '#deb992',
   },
 });
