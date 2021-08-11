@@ -31,7 +31,19 @@ const useStyles = makeStyles({
     left: 20,
     top: 10 * 15,
     width: '30em',
+    height: '20em',
     color: 'white',
+  },
+  explicationConcept: {
+    width: '100vw',
+    display: 'flex',
+    justifyContent: 'center',
+  },
+  text2: {
+    margin: 10,
+    width: '70vw',
+    height: '20em',
+    textAlign: 'center',
   },
   image: {},
 });
@@ -52,6 +64,15 @@ export default function HomePage() {
           minima repellendus iusto!
         </div>
         <CategoriesSelect />
+        <div className={classes.explicationConcept}>
+          <p className={classes.text2}>
+            {' '}
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In a hic
+            laboriosam incidunt quibusdam cupiditate. Culpa facilis, corrupti
+            distinctio fuga ratione assumenda iste maiores, explicabo in,
+            eligendi minima repellendus iusto!
+          </p>
+        </div>
       </div>
     </>
   );
