@@ -20,12 +20,11 @@ const useStyles = makeStyles({
     '& > *': {
       width: '100vw',
       height: '100vh',
-   
     },
   },
   homeImg: {
     margin: 0,
-    overflow: 'hidden'
+    overflow: 'hidden',
   },
   text: {
     position: 'absolute',
@@ -34,8 +33,7 @@ const useStyles = makeStyles({
     width: '30em',
     color: 'white',
   },
-  image: {
-  }
+  image: {},
 });
 
 export default function HomePage() {
