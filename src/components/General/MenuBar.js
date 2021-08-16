@@ -30,7 +30,7 @@ const theme = createTheme({
       label: {
         color: '#0C0C02',
         fontFamily: 'Advent Pro, sans-serif',
-        fontSize: '16px'
+        fontSize: '16px',
       },
     },
   },
