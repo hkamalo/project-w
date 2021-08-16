@@ -4,7 +4,7 @@
 import React from 'react';
 import { Link, glide } from 'react-tiger-transition';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { AppBar, Toolbar, Button, IconButton, Grow } from '@material-ui/core';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import {
@@ -28,8 +28,9 @@ const theme = createTheme({
   overrides: {
     MuiButton: {
       label: {
-        color: '#87CEFA',
-        fontFamily: 'Poppins, sans-serif',
+        color: '#0C0C02',
+        fontFamily: 'Advent Pro, sans-serif',
+        fontSize: '16px'
       },
     },
   },
@@ -45,8 +46,8 @@ const useStyles = makeStyles({
     position: 'fixed',
     top: '0px',
     right: 0,
-    color: '#deb992',
-    background: '#051622',
+    color: '#fff',
+    background: '#FFFAEC',
     zIndex: '1',
     marginBottom: 20,
     [theme.breakpoints.down('sm')]: {
@@ -73,8 +74,8 @@ glide({
 
 export default function MenuBar(props) {
   const classes = useStyles();
-  const iconLinkedin = <FontAwesomeIcon icon={faLinkedin} color="#87CEFA" />;
-  const iconGithub = <FontAwesomeIcon icon={faGithubSquare} color="#87CEFA" />;
+  const iconFacebook = <FontAwesomeIcon icon={faFacebook} color="#0C0C02" />;
+  const iconInstagram = <FontAwesomeIcon icon={faInstagram} color="#0C0C02" />;
   return (
     <>
       <HideOnScroll {...props}>
@@ -86,14 +87,14 @@ export default function MenuBar(props) {
                 href="https://www.linkedin.com/in/heran%C3%A7a-kamalo-5075bb124/"
                 target="_blank"
               >
-                {iconLinkedin}
+                {iconFacebook}
               </IconButton>
               <IconButton
                 variant="link"
                 href="https://github.com/hkamalo"
                 target="_blank"
               >
-                {iconGithub}
+                {iconInstagram}
               </IconButton>
             </div>
             <div>
