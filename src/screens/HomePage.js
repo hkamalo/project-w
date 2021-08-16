@@ -49,8 +49,8 @@ const useStyles = makeStyles({
     textAlign: 'center',
   },
   image: {
-    width: 1920*0.8,
-    height: 1259*0.8
+    width: 1920 * 0.8,
+    height: 1259 * 0.8,
   },
   secondPart: {
     background: '#fff',
@@ -58,7 +58,6 @@ const useStyles = makeStyles({
     display: 'flex',
     flexDirection: 'column',
   },
-
 });
 
 export default function HomePage() {
