@@ -20,6 +20,9 @@ const useStyles = makeStyles({
     '& > *': {
       width: '100vw',
       height: '100vh',
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'center',
     },
   },
   homeImg: {
@@ -45,7 +48,17 @@ const useStyles = makeStyles({
     height: '20em',
     textAlign: 'center',
   },
-  image: {},
+  image: {
+    width: 1920*0.8,
+    height: 1259*0.8
+  },
+  secondPart: {
+    background: '#fff',
+    width: '60em',
+    display: 'flex',
+    flexDirection: 'column',
+  },
+
 });
 
 export default function HomePage() {
@@ -63,15 +76,17 @@ export default function HomePage() {
           distinctio fuga ratione assumenda iste maiores, explicabo in, eligendi
           minima repellendus iusto!
         </div>
-        <CategoriesSelect />
-        <div className={classes.explicationConcept}>
-          <p className={classes.text2}>
-            {' '}
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In a hic
-            laboriosam incidunt quibusdam cupiditate. Culpa facilis, corrupti
-            distinctio fuga ratione assumenda iste maiores, explicabo in,
-            eligendi minima repellendus iusto!
-          </p>
+        <div className={classes.secondPart}>
+          <CategoriesSelect />
+          <div className={classes.explicationConcept}>
+            <p className={classes.text2}>
+              {' '}
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In a hic
+              laboriosam incidunt quibusdam cupiditate. Culpa facilis, corrupti
+              distinctio fuga ratione assumenda iste maiores, explicabo in,
+              eligendi minima repellendus iusto!
+            </p>
+          </div>
         </div>
       </div>
     </>

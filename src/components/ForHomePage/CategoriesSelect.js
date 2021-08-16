@@ -8,6 +8,7 @@ const useStyles = makeStyles({
   categorySection: {
     marginTop: 30,
     display: 'flex',
+    flexDirection: 'column',
     justifyContent: 'center',
     flexWrap: 'wrap',
     maxHeight: '100vh',

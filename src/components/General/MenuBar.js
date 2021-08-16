@@ -28,7 +28,7 @@ const theme = createTheme({
   overrides: {
     MuiButton: {
       label: {
-        color: '#0C0C02',
+        color: '#FFFAEC',
         fontFamily: 'Advent Pro, sans-serif',
         fontSize: '16px',
       },
@@ -47,7 +47,7 @@ const useStyles = makeStyles({
     top: '0px',
     right: 0,
     color: '#fff',
-    background: '#FFFAEC',
+    background: '#2A0800',
     zIndex: '1',
     marginBottom: 20,
     [theme.breakpoints.down('sm')]: {
@@ -74,48 +74,48 @@ glide({
 
 export default function MenuBar(props) {
   const classes = useStyles();
-  const iconFacebook = <FontAwesomeIcon icon={faFacebook} color="#0C0C02" />;
-  const iconInstagram = <FontAwesomeIcon icon={faInstagram} color="#0C0C02" />;
+  const iconFacebook = <FontAwesomeIcon icon={faFacebook} color="#FFFAEC" />;
+  const iconInstagram = <FontAwesomeIcon icon={faInstagram} color="#FFFAEC" />;
   return (
     <>
-      <HideOnScroll {...props}>
-        <AppBar>
-          <Toolbar className={classes.menu}>
-            <div className={classes.links}>
-              <IconButton
-                variant="link"
-                href="https://www.linkedin.com/in/heran%C3%A7a-kamalo-5075bb124/"
-                target="_blank"
-              >
-                {iconFacebook}
-              </IconButton>
-              <IconButton
-                variant="link"
-                href="https://github.com/hkamalo"
-                target="_blank"
-              >
-                {iconInstagram}
-              </IconButton>
-            </div>
-            <div>
-              <MuiThemeProvider theme={theme}>
-                <Link exact to="/" transition="glide-left">
-                  <Button>Accueil</Button>
-                </Link>
-                <Link exact to="/surmesure" transition="glide-left">
-                  <Button>Sur-Mesure</Button>
-                </Link>
-                <Link exact to="/tarifs" transition="glide-left">
-                  <Button>Délais & Tarifs</Button>
-                </Link>
-                <Link exact to="/rendezvous" transition="glide-left">
-                  <Button>Rendez-vous</Button>
-                </Link>
-              </MuiThemeProvider>
-            </div>
-          </Toolbar>
-        </AppBar>
-      </HideOnScroll>
+      {/* <HideOnScroll {...props}> */}
+      <AppBar>
+        <Toolbar className={classes.menu}>
+          <div className={classes.links}>
+            <IconButton
+              variant="link"
+              href="https://www.linkedin.com/in/heran%C3%A7a-kamalo-5075bb124/"
+              target="_blank"
+            >
+              {iconFacebook}
+            </IconButton>
+            <IconButton
+              variant="link"
+              href="https://github.com/hkamalo"
+              target="_blank"
+            >
+              {iconInstagram}
+            </IconButton>
+          </div>
+          <div>
+            <MuiThemeProvider theme={theme}>
+              <Link exact to="/" transition="glide-left">
+                <Button>Accueil</Button>
+              </Link>
+              <Link exact to="/surmesure" transition="glide-left">
+                <Button>Sur-Mesure</Button>
+              </Link>
+              <Link exact to="/tarifs" transition="glide-left">
+                <Button>Délais & Tarifs</Button>
+              </Link>
+              <Link exact to="/rendezvous" transition="glide-left">
+                <Button>Rendez-vous</Button>
+              </Link>
+            </MuiThemeProvider>
+          </div>
+        </Toolbar>
+      </AppBar>
+      {/* </HideOnScroll> */}
     </>
   );
 }
