@@ -35,19 +35,17 @@ const useStyles = makeStyles({
     border: '2px solid purple',
     margin: 0,
     overflow: 'hidden',
-    width: 1920*0.75,
-    height: 1259*2,
+    width: 1920 * 0.75,
+    height: 1259 * 2,
     position: 'relative',
   },
   text: {
     border: '1px solid red',
     color: '#2A0800',
     width: '30vw',
-    height: '30vh'
+    height: '30vh',
   },
-  image: {
-   
-  },
+  image: {},
   secondPart: {
     border: '1px solid red',
     width: '100vw',
