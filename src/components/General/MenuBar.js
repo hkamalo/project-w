@@ -47,7 +47,7 @@ const useStyles = makeStyles({
     margin: 0,
     padding: 0,
     justifyContent: 'space-between',
-    position: 'fixed',
+    position: 'relative',
     top: '0px',
     right: 0,
     color: '#fff',

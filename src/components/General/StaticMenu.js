@@ -27,13 +27,11 @@ const theme = createTheme({
 const useStyles = makeStyles({
   menu: {
     width: '100vw',
-    height: '30vh',
+    height: '15vh',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
     color: '#fff',
-    zIndex: '1',
-    marginBottom: 0,
     [theme.breakpoints.down('sm')]: {
       diplay: 'flex',
       alignItems: 'center',

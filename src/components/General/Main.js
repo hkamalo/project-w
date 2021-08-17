@@ -6,6 +6,7 @@ import RdvPage from '../../screens/RdvPage';
 import SurMesurePage from '../../screens/SurMesurePage';
 import HomePage from '../../screens/HomePage';
 import PricesPage from '../../screens/PricesPage';
+import StaticMenu from './StaticMenu';
 
 const useStyles = makeStyles({
   main: {
@@ -21,6 +22,7 @@ export default function Main() {
   return (
     <>
       <main className={classes.main}>
+        <StaticMenu />
         <Route exact path="/">
           <Screen>
             <HomePage />
