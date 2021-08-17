@@ -26,7 +26,7 @@ const useStyles = makeStyles({
     },
   },
   firstPart: {
-    marginTop: '14vh',
+  
     border: '2px solid blue',
     width: '100vw',
     height: '80vh',

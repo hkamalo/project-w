@@ -5,6 +5,7 @@ import { Toolbar, CssBaseline } from '@material-ui/core';
 import MenuBar from './components/General/MenuBar';
 import Main from './components/General/Main';
 import Footer from './components/General/Footer';
+import StaticMenu from './components/General/StaticMenu';
 
 const useStyles = makeStyles({
   root: {
@@ -26,7 +27,7 @@ export default function App() {
         <div className={classes.root}>
           <CssBaseline />
           <MenuBar />
-          <Toolbar />
+          <StaticMenu />
           <Main />
         </div>
       </Navigation>

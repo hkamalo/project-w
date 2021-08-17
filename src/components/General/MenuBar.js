@@ -33,15 +33,19 @@ const theme = createTheme({
         fontSize: '16px',
       },
     },
+    MuiToolbarRegular: {
+      minHeight: '3vh',
+    },
   },
 });
 
 const useStyles = makeStyles({
   menu: {
     width: '100vw',
-    height: '30px',
+    minHeight: '2vh',
     display: 'flex',
-    padding: 20,
+    margin: 0,
+    padding: 0,
     justifyContent: 'space-between',
     position: 'fixed',
     top: '0px',
@@ -49,7 +53,7 @@ const useStyles = makeStyles({
     color: '#fff',
     background: '#2A0800',
     zIndex: '1',
-    marginBottom: 20,
+    marginBottom: 0,
     [theme.breakpoints.down('sm')]: {
       diplay: 'flex',
       alignItems: 'center',
@@ -59,7 +63,8 @@ const useStyles = makeStyles({
   },
   link: {
     display: 'flex',
-    padding: 20,
+    margin: 0,
+    padding: 0,
     [theme.breakpoints.down('sm')]: {
       diplay: 'flex',
       padding: 0,
@@ -79,10 +84,10 @@ export default function MenuBar(props) {
   return (
     <>
       {/* <HideOnScroll {...props}> */}
-      <AppBar>
-        <Toolbar className={classes.menu}>
-          <div className={classes.links}>
-            <IconButton
+
+      <div className={classes.menu}>
+        <div className={classes.links}>
+          {/* <IconButton
               variant="link"
               href="https://www.linkedin.com/in/heran%C3%A7a-kamalo-5075bb124/"
               target="_blank"
@@ -95,9 +100,9 @@ export default function MenuBar(props) {
               target="_blank"
             >
               {iconInstagram}
-            </IconButton>
-          </div>
-          <div>
+            </IconButton> */}
+        </div>
+        {/* <div>
             <MuiThemeProvider theme={theme}>
               <Link exact to="/" transition="glide-left">
                 <Button>Accueil</Button>
@@ -112,9 +117,8 @@ export default function MenuBar(props) {
                 <Button>Rendez-vous</Button>
               </Link>
             </MuiThemeProvider>
-          </div>
-        </Toolbar>
-      </AppBar>
+          </div> */}
+      </div>
       {/* </HideOnScroll> */}
     </>
   );
