@@ -17,8 +17,8 @@ const useStyles = makeStyles({
 
   category: {
     margin: 15,
-    width: 210*1.5,
-    height: 440*1.5,
+    width: 210 * 1.5,
+    height: 440 * 1.5,
     border: '1px solid blue',
     textAlign: 'center',
     display: 'flex',
@@ -27,8 +27,8 @@ const useStyles = makeStyles({
   },
   kidCategory: {
     margin: 15,
-    width: 210*1.5,
-    height: 440*1.5,
+    width: 210 * 1.5,
+    height: 440 * 1.5,
     border: '1px solid yellow',
     textAlign: 'center',
     display: 'flex',
@@ -47,7 +47,7 @@ const useStyles = makeStyles({
     height: 68,
     backgroundColor: 'rgba(255,255,255,0.9)',
     padding: '20px 10px',
-    display: 'block'
+    display: 'block',
   },
 });
 export default function CategoriesSelect() {
