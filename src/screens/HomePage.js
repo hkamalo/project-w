@@ -39,7 +39,7 @@ const useStyles = makeStyles({
     margin: 0,
     overflow: 'hidden',
     width: 1920 * 0.75,
-    height: 1259*0.8,
+    height: 1259 * 0.8,
     position: 'relative',
   },
   text: {
