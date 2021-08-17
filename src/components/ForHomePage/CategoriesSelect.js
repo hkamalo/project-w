@@ -6,18 +6,19 @@ import partyDress from '../../images/samson-ejim-CPNPcCAeuaI-unsplash.jpg';
 
 const useStyles = makeStyles({
   categorySection: {
+    border: '1px solid black',
     marginTop: 30,
     display: 'flex',
-    flexDirection: 'column',
     justifyContent: 'center',
+    alignItems: 'center',
     flexWrap: 'wrap',
     maxHeight: '100vh',
   },
 
   category: {
-    margin: 5,
-    width: 640 * 0.6,
-    height: 480 * 0.6,
+    margin: 15,
+    width: 210*1.5,
+    height: 440*1.5,
     border: '1px solid blue',
     textAlign: 'center',
     display: 'flex',
@@ -25,9 +26,9 @@ const useStyles = makeStyles({
     alignItems: 'center',
   },
   kidCategory: {
-    margin: 5,
-    width: 640 * 0.9,
-    height: 480 * 0.6,
+    margin: 15,
+    width: 210*1.5,
+    height: 440*1.5,
     border: '1px solid yellow',
     textAlign: 'center',
     display: 'flex',
@@ -41,7 +42,12 @@ const useStyles = makeStyles({
   description: {
     position: 'absolute',
     textAlign: 'center',
-    color: 'white',
+    color: '#2A0800',
+    width: 170,
+    height: 68,
+    backgroundColor: 'rgba(255,255,255,0.9)',
+    padding: '20px 10px',
+    display: 'block'
   },
 });
 export default function CategoriesSelect() {

@@ -51,8 +51,8 @@ const useStyles = makeStyles({
     width: '100vw',
     height: '80vh',
     display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'flex-end',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   explicationConcept: {
     border: '1px solid black',
