@@ -78,7 +78,6 @@ const useStyles = makeStyles({
     width: '70%',
     textAlign: 'center',
     color: 'black',
-    
   },
 });
 
@@ -93,12 +92,8 @@ export default function HomePage() {
             <img className={classes.image} src={homeImage} alt="dress-home" />
           </div>
           <div className={classes.text}>
-            <p>
-              Bienvenue
-            </p>
-            <p>
-              Welcome
-            </p>
+            <p>Bienvenue</p>
+            <p>Welcome</p>
           </div>
         </div>
         <div className={classes.explicationConcept}>
