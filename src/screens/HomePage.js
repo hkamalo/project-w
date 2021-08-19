@@ -27,6 +27,7 @@ const useStyles = makeStyles({
   },
   firstPart: {
     border: '2px solid blue',
+    padding: '0px 20px 0px 20px',
     width: '100vw',
     height: '82vh',
     display: 'flex',
@@ -49,6 +50,8 @@ const useStyles = makeStyles({
     padding: '30px 30px',
     textAlign: 'center',
     display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
     alignItems: 'center',
   },
   image: {},
@@ -75,6 +78,7 @@ const useStyles = makeStyles({
     width: '70%',
     textAlign: 'center',
     color: 'black',
+    
   },
 });
 
@@ -89,10 +93,12 @@ export default function HomePage() {
             <img className={classes.image} src={homeImage} alt="dress-home" />
           </div>
           <div className={classes.text}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In a hic
-            laboriosam incidunt quibusdam cupiditate. Culpa facilis, corrupti
-            distinctio fuga ratione assumenda iste maiores, explicabo in,
-            eligendi minima repellendus iusto!
+            <p>
+              Bienvenue
+            </p>
+            <p>
+              Welcome
+            </p>
           </div>
         </div>
         <div className={classes.explicationConcept}>
