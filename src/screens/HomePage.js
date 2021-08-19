@@ -103,7 +103,7 @@ export default function HomePage() {
         <div className={classes.explicationConcept}>
           <p className={classes.text2}>
             {' '}
-            Une idée, une envie ? 
+            Une idée, une envie ?
             <br />
             Nous serons avec vous pour réaliser vos créations.
           </p>
