@@ -17,17 +17,15 @@ const theme = createTheme({
 
 const useStyles = makeStyles({
   root: {
-    '& > *': {
-      width: '100vw',
-      height: '100vh',
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-    },
+    width: '100vw',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   firstPart: {
     border: '2px solid blue',
-    padding: '0px 20px 0px 20px',
+    padding: '0px 20px 0px 0px',
     width: '100vw',
     height: '82vh',
     display: 'flex',
@@ -53,6 +51,9 @@ const useStyles = makeStyles({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
+    fontFamily: 'Julius Sans One, sans-serif',
+    fontWeight: 'bold',
+    fontSize: 50,
   },
   image: {},
   secondPart: {
@@ -65,19 +66,23 @@ const useStyles = makeStyles({
   },
   explicationConcept: {
     border: '1px solid black',
-    width: '100vw',
-    height: '40vh',
+    width: '60vw',
+    marginTop: '10vh',
+    height: '10vh',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    background: '#fff',
+    background: '#2A0800',
+    opacity: 0.9,
   },
   text2: {
     margin: 10,
     border: '1px solid green',
     width: '70%',
+    fontFamily: 'Quicksand, sans-serif',
+    fontSize: 20,
     textAlign: 'center',
-    color: 'black',
+    color: '#FFFAEC',
   },
 });
 
@@ -92,17 +97,15 @@ export default function HomePage() {
             <img className={classes.image} src={homeImage} alt="dress-home" />
           </div>
           <div className={classes.text}>
-            <p>Bienvenue</p>
-            <p>Welcome</p>
+            <p>Bienvenue</p>.<p>Welcome</p>
           </div>
         </div>
         <div className={classes.explicationConcept}>
           <p className={classes.text2}>
             {' '}
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In a hic
-            laboriosam incidunt quibusdam cupiditate. Culpa facilis, corrupti
-            distinctio fuga ratione assumenda iste maiores, explicabo in,
-            eligendi minima repellendus iusto!
+            Une idée, une envie ? 
+            <br />
+            Nous serons avec vous pour réaliser vos créations.
           </p>
         </div>
         <div className={classes.secondPart}>

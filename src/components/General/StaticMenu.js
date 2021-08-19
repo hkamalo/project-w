@@ -17,7 +17,7 @@ const theme = createTheme({
     MuiButton: {
       label: {
         color: '#2A0800',
-        fontFamily: 'Advent Pro, sans-serif',
+        fontFamily: 'Julius Sans One, sans-serif',
         fontSize: '16px',
       },
     },

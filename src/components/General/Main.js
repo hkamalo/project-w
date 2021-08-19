@@ -10,7 +10,7 @@ import StaticMenu from './StaticMenu';
 
 const useStyles = makeStyles({
   main: {
-    background: '#FFFAEC',
+    background: '#fff',
     color: '#fff',
   },
 });
