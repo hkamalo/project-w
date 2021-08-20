@@ -12,7 +12,7 @@ const useStyles = makeStyles({
     flexDirection: 'column',
   },
   footer: {
-    position:'fixed',
+    position: 'fixed',
     bottom: 0,
   },
 });
