@@ -39,6 +39,18 @@ const useStyles = makeStyles({
       padding: 0,
     },
   },
+  links: {
+    zIndex: 999,
+    border: '1px solid #87CEFA',
+    position: 'absolute',
+    background: '#fff',
+    margin: 0,
+    width: '100vw',
+    height: '15vh',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
 });
 
 glide({
@@ -53,20 +65,22 @@ export default function StaticMenu(props) {
   return (
     <>
       <div className={classes.menu}>
-        <MuiThemeProvider theme={theme}>
-          <Link exact to="/" transition="glide-left">
-            <Button>Accueil</Button>
-          </Link>
-          <Link exact to="/surmesure" transition="glide-left">
-            <Button>Sur-Mesure</Button>
-          </Link>
-          <Link exact to="/tarifs" transition="glide-left">
-            <Button>Délais & Tarifs</Button>
-          </Link>
-          <Link exact to="/rendezvous" transition="glide-left">
-            <Button>Rendez-vous</Button>
-          </Link>
-        </MuiThemeProvider>
+        <div className={classes.links}>
+          <MuiThemeProvider theme={theme}>
+            <Link exact to="/" transition="glide-left">
+              <Button>Accueil</Button>
+            </Link>
+            <Link exact to="/surmesure" transition="glide-left">
+              <Button>Sur-Mesure</Button>
+            </Link>
+            <Link exact to="/tarifs" transition="glide-left">
+              <Button>Délais & Tarifs</Button>
+            </Link>
+            <Link exact to="/rendezvous" transition="glide-left">
+              <Button>Rendez-vous</Button>
+            </Link>
+          </MuiThemeProvider>
+        </div>
       </div>
     </>
   );
