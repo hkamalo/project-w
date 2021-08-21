@@ -5,8 +5,6 @@ import { Grow } from '@material-ui/core';
 import modeleBg from '../images/leon-ell-f6HbVnGtNnY-unsplash.jpg';
 import NormalClothes from '../components/ForSurMesurePage/NormalClothes';
 
-
-
 const useStyles = makeStyles({
   root: {
     margin: 10,
@@ -45,7 +43,7 @@ const useStyles = makeStyles({
     fontSize: 13,
     margin: '20px 0px 20px 0px',
   },
-  displayModeles :{
+  displayModeles: {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',

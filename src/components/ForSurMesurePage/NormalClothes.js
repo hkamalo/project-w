@@ -55,10 +55,7 @@ export default function NormalClothes() {
     <>
       <Fade in timeout={1000} style={{ transitionDelay: '200ms' }}>
         <div className={classes.root}>
-          <Grid
-            container
-            spacing={8}
-          >
+          <Grid container spacing={8}>
             <Grid
               container
               direction="row"

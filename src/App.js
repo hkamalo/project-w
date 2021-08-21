@@ -11,8 +11,7 @@ const useStyles = makeStyles({
     display: 'flex',
     flexDirection: 'column',
   },
-  footer: {
-  },
+  footer: {},
 });
 
 export default function App() {
