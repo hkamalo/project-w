@@ -3,6 +3,7 @@ import { makeStyles, createTheme } from '@material-ui/core/styles';
 import { Screen } from 'react-tiger-transition';
 import { Grow } from '@material-ui/core';
 import modeleBg from '../images/leon-ell-f6HbVnGtNnY-unsplash.jpg';
+import Normal from '../components/ForSurMesurePage/Normal';
 
 const theme = createTheme();
 
@@ -40,6 +41,11 @@ const useStyles = makeStyles({
     position: 'absolute',
     top: '-120em',
   },
+  select: {
+    fontFamily: 'Quicksand, sans-serif',
+    fontSize: 13,
+    marginTop: 20,
+  },
 });
 
 export default function SurMesurePage() {
@@ -51,13 +57,22 @@ export default function SurMesurePage() {
         <div className={classes.imageTop}>
           <img className={classes.image} src={modeleBg} alt="modele-bg" />
         </div>
-        <div className="select">
-          <select name="location" id="select-types">
-            <option key="robes" value="">--Types--</option>
-            <option key="robes" value="robes">Robes</option>
-            <option key="jupes" value="jupes">Jupes</option>
-            <option key="vestes" value="vestes">Vestes</option>
+        <div>
+          <select className={classes.select} name="type-selection" id="select-types">
+            <option key="robes" value="">
+              --Types--
+            </option>
+            <option key="robes" value="robes">
+              Robes
+            </option>
+            <option key="jupes" value="jupes">
+              Jupes
+            </option>
+            <option key="vestes" value="vestes">
+              Vestes
+            </option>
           </select>
+          <Normal />
         </div>
       </div>
     </>
