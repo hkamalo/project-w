@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles, createTheme } from '@material-ui/core/styles';
 import { Screen } from 'react-tiger-transition';
 import { Grow } from '@material-ui/core';
-import modeleBg from '../images/leon-ell-f6HbVnGtNnY-unsplash.jpg';
+import modeleBg from '../images/clarke-sanders-ybPJ47PMT_M-unsplash.jpg';
 import NormalClothes from '../components/ForSurMesurePage/NormalClothes';
 
 const useStyles = makeStyles({
@@ -34,14 +34,18 @@ const useStyles = makeStyles({
   image: {
     border: '1px solid blue',
     width: 1920,
-    height: 2879,
+    height: 1280,
     position: 'absolute',
-    top: '-120em',
+    top: '-15em',
   },
   select: {
     fontFamily: 'Quicksand, sans-serif',
     fontSize: 13,
-    margin: '20px 0px 20px 0px',
+    margin: '20px 0px 50px 0px',
+    border: '1px solid blue',
+    width: '9em',
+    height: '2em',
+    textAlign: 'center',
   },
   displayModeles: {
     display: 'flex',
