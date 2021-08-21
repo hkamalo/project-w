@@ -4,7 +4,7 @@ import Typography from '@material-ui/core/Typography';
 import GitHubIcon from '@material-ui/icons/GitHub';
 
 const useStyles = makeStyles((theme) => ({
-  Footer: {
+  footer: {
     width: '100%',
     textAlign: 'center',
     background: 'var(--dark-grey)',
@@ -15,24 +15,12 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 'bold',
     color: 'var(--text-primary)',
   },
-  icons: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    '& *': {
-      display: 'flex',
-      margin: 'auto',
-    },
-  },
-  wild: {
-    maxHeight: '24px',
-  },
 }));
 
 function Footer() {
   const classes = useStyles();
   return (
-    <footer className={classes.Footer}>
+    <footer className={classes.footer}>
       <Typography variant="caption" className={classes.Typography}>
         © 2021 project-w
       </Typography>

@@ -12,8 +12,6 @@ const useStyles = makeStyles({
     flexDirection: 'column',
   },
   footer: {
-    position: 'fixed',
-    bottom: 0,
   },
 });
 
@@ -21,16 +19,15 @@ export default function App() {
   const classes = useStyles();
 
   return (
-    <>
+    <div className={classes.root}>
       <Navigation>
-        <div className={classes.root}>
+        <div>
           <CssBaseline />
           <MenuBar />
-
           <Main />
         </div>
       </Navigation>
       <Footer className={classes.footer} />
-    </>
+    </div>
   );
 }

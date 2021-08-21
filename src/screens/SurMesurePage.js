@@ -3,9 +3,9 @@ import { makeStyles, createTheme } from '@material-ui/core/styles';
 import { Screen } from 'react-tiger-transition';
 import { Grow } from '@material-ui/core';
 import modeleBg from '../images/leon-ell-f6HbVnGtNnY-unsplash.jpg';
-import Normal from '../components/ForSurMesurePage/Normal';
+import NormalClothes from '../components/ForSurMesurePage/NormalClothes';
 
-const theme = createTheme();
+
 
 const useStyles = makeStyles({
   root: {
@@ -19,7 +19,6 @@ const useStyles = makeStyles({
   },
   main: {
     width: '100vw',
-    height: '100vh',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -44,7 +43,12 @@ const useStyles = makeStyles({
   select: {
     fontFamily: 'Quicksand, sans-serif',
     fontSize: 13,
-    marginTop: 20,
+    margin: '20px 0px 20px 0px',
+  },
+  displayModeles :{
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
   },
 });
 
@@ -57,7 +61,7 @@ export default function SurMesurePage() {
         <div className={classes.imageTop}>
           <img className={classes.image} src={modeleBg} alt="modele-bg" />
         </div>
-        <div>
+        <div className={classes.displayModeles}>
           <select
             className={classes.select}
             name="type-selection"
@@ -76,7 +80,7 @@ export default function SurMesurePage() {
               Vestes
             </option>
           </select>
-          <Normal />
+          <NormalClothes />
         </div>
       </div>
     </>
