@@ -58,7 +58,11 @@ export default function SurMesurePage() {
           <img className={classes.image} src={modeleBg} alt="modele-bg" />
         </div>
         <div>
-          <select className={classes.select} name="type-selection" id="select-types">
+          <select
+            className={classes.select}
+            name="type-selection"
+            id="select-types"
+          >
             <option key="robes" value="">
               --Types--
             </option>
