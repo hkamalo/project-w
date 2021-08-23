@@ -6,15 +6,6 @@ import modeleBg from '../images/clarke-sanders-ybPJ47PMT_M-unsplash.jpg';
 import NormalClothes from '../components/ForSurMesurePage/NormalClothes';
 
 const useStyles = makeStyles({
-  root: {
-    margin: 10,
-    width: '100vw',
-    minHeight: '100vh',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
   main: {
     width: '100vw',
     display: 'flex',
@@ -41,7 +32,7 @@ const useStyles = makeStyles({
   select: {
     fontFamily: 'Quicksand, sans-serif',
     fontSize: 13,
-    margin: '20px 0px 50px 0px',
+    margin: '50px 0px 50px 0px',
     border: '1px solid blue',
     width: '9em',
     height: '2em',

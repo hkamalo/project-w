@@ -1,6 +1,5 @@
 import { makeStyles, createTheme } from '@material-ui/core/styles';
 import { Fade, Link } from '@material-ui/core';
-import Paper from '@material-ui/core/Paper';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
 import Grid from '@material-ui/core/Grid';
@@ -32,7 +31,7 @@ const useStyles = makeStyles({
     display: 'flex',
     justifyContent: 'center',
   },
-  paper: {
+  card: {
     textAlign: 'center',
     width: 320 * 0.8,
     height: 480 * 0.8,
@@ -43,6 +42,7 @@ const useStyles = makeStyles({
     marginBottom: '20em',
     display: 'flex',
     justifyContent: 'center',
+    margin: '50px 0px 50px 0px',
   },
   smallGrid: {
     border: '1px solid green',
@@ -99,7 +99,7 @@ export default function NormalClothes() {
             >
               {modeles.map((modele) => (
                 <Grid className={classes.extraSmallGrid} item xs={4}>
-                  <Card className={classes.paper}>
+                  <Card className={classes.card}>
                     <CardMedia
                       className={classes.photoModele}
                       image={modele}
