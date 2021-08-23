@@ -26,7 +26,7 @@ const useStyles = makeStyles({
   },
   text: {
     border: '1px solid red',
-    margin: '3em 0 2em 0'
+    margin: '3em 0 2em 0',
   },
 });
 
