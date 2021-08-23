@@ -14,9 +14,9 @@ const useStyles = makeStyles({
   },
   card: {
     textAlign: 'center',
-    width: 640*1.3,
-    height: 427*1.3,
-    borderRadius: 0
+    width: 640 * 1.3,
+    height: 427 * 1.3,
+    borderRadius: 0,
   },
   ImgDesc: {
     width: '100%',
@@ -24,8 +24,8 @@ const useStyles = makeStyles({
   },
   text: {
     border: '1px solid red',
-    color: 'red'
-  }
+    color: 'red',
+  },
 });
 
 export default function PricesPage() {
