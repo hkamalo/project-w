@@ -11,6 +11,8 @@ const useStyles = makeStyles({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+    color: '#2A0800',
+    fontFamily: 'Julius Sans One, sans-serif',
   },
   card: {
     textAlign: 'center',
@@ -24,7 +26,7 @@ const useStyles = makeStyles({
   },
   text: {
     border: '1px solid red',
-    color: 'red',
+    margin: '3em 0 2em 0'
   },
 });
 
@@ -47,12 +49,22 @@ export default function PricesPage() {
           <p> 5 étapes </p>
         </div>
         <div>
-          <h2>Découverte</h2>
+          <div>
+            <h2>Découverte</h2>
+          </div>
+          <div>
+            <h2>Atelier créatif</h2>
+          </div>
+          <div>
+            <h2>Mesures</h2>
+          </div>
+          <div>
+            <h2>Test</h2>
+          </div>
+          <div>
+            <h2>Livraison</h2>
+          </div>
         </div>
-        <div>text</div>
-        <div>text</div>
-        <div>text</div>
-        <div>text</div>
       </div>
     </>
   );
