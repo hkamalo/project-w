@@ -34,7 +34,7 @@ const useStyles = makeStyles({
     display: 'flex',
     justifyContent: 'center',
     width: '60em',
-    height: '40em'
+    height: '40em',
   },
 });
 

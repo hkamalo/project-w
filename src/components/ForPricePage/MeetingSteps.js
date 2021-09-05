@@ -35,9 +35,6 @@ const useStyles = makeStyles((them) => ({
     marginTop: them.spacing(2),
     marginBottom: them.spacing(2),
   },
-  stepLabel: {
-    border: '1px solid red',
-  },
 }));
 
 const theme = createTheme({
@@ -45,7 +42,8 @@ const theme = createTheme({
     MuiStepLabel: {
       label: {
         fontSize: '22px',
-        color: 'red',
+        color: '#2A0800',
+        fontFamily: 'Julius Sans One, sans-serif',
       },
     },
   },
