@@ -6,7 +6,6 @@ import partyDress from '../../images/samson-ejim-CPNPcCAeuaI-unsplash.jpg';
 
 const useStyles = makeStyles({
   categorySection: {
-    border: '1px solid black',
     marginTop: 30,
     display: 'flex',
     justifyContent: 'center',
@@ -19,7 +18,6 @@ const useStyles = makeStyles({
     margin: 15,
     width: 210 * 1.5,
     height: 440 * 1.5,
-    border: '1px solid blue',
     textAlign: 'center',
     display: 'flex',
     justifyContent: 'center',
@@ -29,7 +27,6 @@ const useStyles = makeStyles({
     margin: 15,
     width: 210 * 1.5,
     height: 440 * 1.5,
-    border: '1px solid yellow',
     textAlign: 'center',
     display: 'flex',
     justifyContent: 'center',

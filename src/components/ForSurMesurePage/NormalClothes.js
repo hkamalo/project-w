@@ -25,7 +25,6 @@ const theme = createTheme({
 
 const useStyles = makeStyles({
   root: {
-    border: '1px solid blue',
     width: '60vw',
     marginBottom: '20em',
     display: 'flex',
@@ -37,7 +36,6 @@ const useStyles = makeStyles({
     height: 480 * 0.8,
   },
   bigGrid: {
-    border: '1px solid purple',
     width: '60vw',
     marginBottom: '20em',
     display: 'flex',
@@ -45,12 +43,10 @@ const useStyles = makeStyles({
     margin: '50px 0px 50px 0px',
   },
   smallGrid: {
-    border: '1px solid green',
     display: 'flex',
     justifyContent: 'center',
   },
   extraSmallGrid: {
-    border: '1px solid blue',
     display: 'flex',
     justifyContent: 'center',
   },

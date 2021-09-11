@@ -13,7 +13,6 @@ const useStyles = makeStyles({
     alignItems: 'center',
   },
   imageTop: {
-    border: '1px solid red',
     overflow: 'hidden',
     width: '100vw',
     height: '55vh',
@@ -23,7 +22,6 @@ const useStyles = makeStyles({
     justifyContent: 'center',
   },
   image: {
-    border: '1px solid blue',
     width: 1920,
     height: 1280,
     position: 'absolute',
@@ -33,7 +31,6 @@ const useStyles = makeStyles({
     fontFamily: 'Quicksand, sans-serif',
     fontSize: 13,
     margin: '50px 0px 50px 0px',
-    border: '1px solid blue',
     width: '9em',
     height: '2em',
     textAlign: 'center',

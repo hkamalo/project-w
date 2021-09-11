@@ -26,11 +26,9 @@ const useStyles = makeStyles({
     height: '100%',
   },
   text: {
-    border: '1px solid red',
     margin: '3em 0 2em 0',
   },
   descriptionEtapes: {
-    border: '1px solid green',
     display: 'flex',
     justifyContent: 'center',
     width: '60em',

@@ -24,7 +24,6 @@ const useStyles = makeStyles({
     alignItems: 'center',
   },
   firstPart: {
-    border: '2px solid blue',
     padding: '0px 20px 0px 0px',
     width: '100vw',
     height: '82vh',
@@ -34,7 +33,6 @@ const useStyles = makeStyles({
     alignItems: 'center',
   },
   homeImg: {
-    border: '2px solid purple',
     margin: 0,
     overflow: 'hidden',
     width: 1920 * 0.75,
@@ -42,7 +40,6 @@ const useStyles = makeStyles({
     position: 'relative',
   },
   text: {
-    border: '1px solid red',
     color: '#2A0800',
     width: '30vw',
     padding: '30px 30px',
@@ -57,7 +54,6 @@ const useStyles = makeStyles({
   },
   image: {},
   secondPart: {
-    border: '1px solid red',
     width: '100vw',
     height: '80vh',
     display: 'flex',
@@ -65,7 +61,6 @@ const useStyles = makeStyles({
     alignItems: 'center',
   },
   explicationConcept: {
-    border: '1px solid black',
     width: '60vw',
     marginTop: '10vh',
     height: '10vh',
@@ -77,7 +72,6 @@ const useStyles = makeStyles({
   },
   text2: {
     margin: 10,
-    border: '1px solid green',
     width: '70%',
     fontFamily: 'Quicksand, sans-serif',
     fontSize: 20,
@@ -105,7 +99,7 @@ export default function HomePage() {
             {' '}
             Une idée, une envie ?
             <br />
-            Nous serons avec vous pour réaliser vos créations.
+            Nous mettons notre savoir-faire à votre service.
           </p>
         </div>
         <div className={classes.secondPart}>
