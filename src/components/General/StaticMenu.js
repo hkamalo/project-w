@@ -41,7 +41,6 @@ const useStyles = makeStyles({
   },
   links: {
     zIndex: 999,
-    border: '1px solid #87CEFA',
     position: 'absolute',
     background: '#fff',
     margin: 0,
