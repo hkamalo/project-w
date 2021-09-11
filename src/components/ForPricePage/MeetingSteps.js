@@ -50,7 +50,12 @@ const theme = createTheme({
 });
 
 function getSteps() {
-  return ['Atelier Découverte', 'Moment Création', 'Prises des mesures', 'Essayage'];
+  return [
+    'Atelier Découverte',
+    'Moment Création',
+    'Prises des mesures',
+    'Essayage',
+  ];
 }
 
 function getStepContent(step) {
