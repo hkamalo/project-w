@@ -98,7 +98,7 @@ const Footer = () => {
                       </li>
                       <li>
                         {' '}
-                        <a href="#"> Politiques de confidentialité</a>{' '}
+                        <a href="#"> Confidentialité</a>{' '}
                       </li>
                     </ul>
                   </div>
