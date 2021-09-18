@@ -36,9 +36,9 @@ const useStyles = makeStyles({
     overflow: 'hidden',
   },
   contact: {
-    height: '60vh',
+    height: '50vh',
     width: '40vw',
-    paddingTop: 50,
+    paddingTop: 0,
     borderRight: '1px solid #2A0800',
     [theme.breakpoints.down('sm')]: {
       paddingTop: 30,
@@ -46,11 +46,9 @@ const useStyles = makeStyles({
   },
   title: {
     textAlign: 'center',
-    marginBottom: '3em',
     color: '#2A0800',
   },
   formulaire: {
-    padding: '5em',
     maxWidth: '60ch',
     margin: '2em auto',
     background: '#fff',
@@ -67,6 +65,7 @@ const useStyles = makeStyles({
     height: '7vh',
     padding: theme.spacing(2),
     color: '#2A0800',
+    textAlign: 'center',
     '&:hover': {
       borderBottom: '1px solid #2A0800',
     },
@@ -81,6 +80,7 @@ const useStyles = makeStyles({
   },
   messageField: {
     display: 'flex',
+    alignItems: 'center',
     height: '10vh',
     padding: theme.spacing(2),
     color: '#2A0800',
