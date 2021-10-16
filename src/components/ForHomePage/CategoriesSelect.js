@@ -114,16 +114,14 @@ const useStyles = makeStyles((theme) => ({
     '&:hover::before': {
       borderTopColor: theme.palette.common.white, // Make borders visible
       borderRightColor: theme.palette.common.white,
-      transition:
-        '"width 0.25s ease-out", "height 0.25s ease-out 0.25s"',// And then height
+      transition: '"width 0.25s ease-out", "height 0.25s ease-out 0.25s"', // And then height
     },
-   '&:hover::after': {
+    '&:hover::after': {
       borderBottomColor: theme.palette.common.white, // Make borders visible
       borderLeftColor: theme.palette.common.white,
       transition:
-        '"border-color 0s ease-out 0.5s", "width 0.25s ease-out 0.5s", "height 0.25s ease-out 0.75s"' // And finally height
-    }
-
+        '"border-color 0s ease-out 0.5s", "width 0.25s ease-out 0.5s", "height 0.25s ease-out 0.75s"', // And finally height
+    },
   },
   imageMarked: {
     height: 3,
