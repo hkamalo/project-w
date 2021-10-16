@@ -6,6 +6,8 @@
 }
 footer {
   color: #2a0800;
+  position: relative;
+  bottom: 0px;
 }
 footer p,
 a {

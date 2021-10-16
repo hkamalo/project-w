@@ -10,8 +10,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.primary.main,
     width: `100%`,
     position: 'relative',
+    bottom: 0,
     overflow: 'hidden',
-    marginTop: '6em',
+    marginTop: '10em',
     padding: '2em 0 ',
   },
   link: {

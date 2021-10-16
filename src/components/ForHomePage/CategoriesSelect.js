@@ -6,18 +6,19 @@ import partyDress from '../../images/samson-ejim-CPNPcCAeuaI-unsplash.jpg';
 
 const useStyles = makeStyles({
   categorySection: {
-    marginTop: 30,
+    margin: '10em 0 10em 0',
     display: 'flex',
-    justifyContent: 'center',
+    justifyContent: 'space-evenly',
     alignItems: 'center',
     flexWrap: 'wrap',
-    maxHeight: '100vh',
+    maxHeight: '100%',
+    width: '100%',
   },
 
   category: {
     margin: 15,
-    width: 210 * 1.5,
-    height: 440 * 1.5,
+    width: 1080 * 0.5,
+    height: 1080,
     textAlign: 'center',
     display: 'flex',
     justifyContent: 'center',
@@ -66,7 +67,7 @@ export default function CategoriesSelect() {
           <p className={classes.description}>fête/mariages</p>{' '}
           <img className={classes.image} src={partyDress} alt="all day dress" />{' '}
         </div>
-        <div className={classes.kidCategory}>
+        <div className={classes.category}>
           {' '}
           <p className={classes.description}>enfants</p>{' '}
           <img className={classes.image} src={kidsDress} alt="all day dress" />{' '}

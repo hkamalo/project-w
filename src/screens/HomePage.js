@@ -55,10 +55,11 @@ const useStyles = makeStyles({
   image: {},
   secondPart: {
     width: '100vw',
-    height: '80vh',
+    height: '110vh',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
+    margin: '5em 0 15em 0',
   },
   explicationConcept: {
     width: '60vw',
