@@ -55,8 +55,8 @@ const useStyles = makeStyles({
   image: {
     position: 'relative',
     top: '5em',
-    width: 1920*1.3,
-    height: 1259*1.3
+    width: 1920 * 1.3,
+    height: 1259 * 1.3,
   },
   secondPart: {
     width: '100vw',
@@ -97,7 +97,8 @@ export default function HomePage() {
             <img className={classes.image} src={homeImage} alt="dress-home" />
           </div>
           <div className={classes.text}>
-            <p>Bienvenue</p><h1>Welcome</h1>
+            <p>Bienvenue</p>
+            <h1>Welcome</h1>
           </div>
         </div>
         <div className={classes.explicationConcept}>

@@ -34,7 +34,7 @@ const useStyles = makeStyles({
     color: '#fff',
     padding: 0,
     position: 'fixed',
-    top : 0,
+    top: 0,
     zIndex: 999,
     [theme.breakpoints.down('sm')]: {
       diplay: 'flex',
