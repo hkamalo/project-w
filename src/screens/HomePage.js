@@ -4,6 +4,7 @@ import { makeStyles, createTheme } from '@material-ui/core/styles';
 import { Fade } from '@material-ui/core';
 import homeImage from '../images/clem-onojeghuo-24vjqGCu0pI-unsplash.jpg';
 import CategoriesSelect from '../components/ForHomePage/CategoriesSelect';
+import sewingThreadImg from '../images/marcus-urbenz-y5CsaPXynjQ-unsplash.jpg';
 
 const theme = createTheme({
   overrides: {
@@ -67,21 +68,27 @@ const useStyles = makeStyles({
     margin: '5em 0 10em 0',
   },
   explicationConcept: {
-    width: '60vw',
-    margin: '15em 0 0 0',
-    height: '10vh',
+    width: '100vw',
+    margin: '15em 0 0em 0',
+    height: '100vh',
     display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: 'flex-start',
     opacity: 0.9,
   },
   text2: {
-    margin: 10,
+    margin: '0 0 0 2em',
     width: '70%',
+    height: 427,
     fontFamily: 'Quicksand, sans-serif',
     fontSize: 60,
     textAlign: 'center',
     color: '#2A0800',
+    display: 'flex',
+    alignItems: 'center',
+  },
+  sewingImg: {
+    width: 640,
+    height: 427,
   },
 });
 
@@ -101,6 +108,7 @@ export default function HomePage() {
           </div>
         </div>
         <div className={classes.explicationConcept}>
+          <img className={classes.sewingImg} src={sewingThreadImg} alt="dress-home" />
           <p className={classes.text2}>
             {' '}
             Une idée, une envie ?
