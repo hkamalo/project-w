@@ -24,42 +24,47 @@ const useStyles = makeStyles({
     alignItems: 'center',
   },
   firstPart: {
-    padding: '0px 20px 0px 0px',
+    padding: '0px 0px 0px 0px',
     width: '100vw',
-    height: '82vh',
+    height: '100vh',
     display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
+    position: 'relative',
+    border: '1px solid #2A0800',
   },
   homeImg: {
     margin: 0,
     overflow: 'hidden',
-    width: 1920 * 0.75,
-    height: 1259 * 0.8,
-    position: 'relative',
+    width: '100%',
+    height: '100%',
+    border: '1px solid #2A0800',
   },
   text: {
-    color: '#2A0800',
+    color: '#fff',
+    position: 'absolute',
+    bottom: '1em',
+    left: '-1em',
     width: '30vw',
-    padding: '30px 30px',
     textAlign: 'center',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
     fontFamily: 'Julius Sans One, sans-serif',
-    fontWeight: 'bold',
-    fontSize: 50,
+    fontSize: 60,
   },
-  image: {},
+  image: {
+    position: 'relative',
+    top: '5em',
+    width: 1920*1.3,
+    height: 1259*1.3
+  },
   secondPart: {
     width: '100vw',
-    height: '110vh',
+    height: '80vh',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    margin: '5em 0 15em 0',
+    margin: '5em 0 10em 0',
   },
   explicationConcept: {
     width: '60vw',
@@ -92,7 +97,7 @@ export default function HomePage() {
             <img className={classes.image} src={homeImage} alt="dress-home" />
           </div>
           <div className={classes.text}>
-            <p>Bienvenue</p>.<p>Welcome</p>
+            <p>Bienvenue</p><h1>Welcome</h1>
           </div>
         </div>
         <div className={classes.explicationConcept}>

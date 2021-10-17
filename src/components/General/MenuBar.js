@@ -42,17 +42,16 @@ const theme = createTheme({
 const useStyles = makeStyles({
   menu: {
     width: '100vw',
-    minHeight: '2vh',
+    height: '0vh',
     display: 'flex',
     margin: 0,
     padding: 0,
     justifyContent: 'space-between',
     position: 'relative',
-    top: '0px',
+    top: 0,
     right: 0,
     color: '#fff',
     background: '#2A0800',
-    zIndex: '1',
     marginBottom: 0,
     [theme.breakpoints.down('sm')]: {
       diplay: 'flex',

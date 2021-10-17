@@ -86,41 +86,11 @@ const useStyles = makeStyles((theme) => ({
     padding: `${theme.spacing(2)}px ${theme.spacing(4)}px ${
       theme.spacing(1) + 6
     }px`,
-    transition: 'border 0.25s',
-    '&::before, &::after': {
-      // Set border to invisible, so we don't see a 4px border on a 0x0 element before the transition starts
-      border: '2px solid transparent',
-      width: 0,
-      height: 0,
-    },
-    // This covers the top & right borders (expands right, then down)
-    '&::before': {
-      top: 0,
-      left: 0,
-    },
-    // And this the bottom & left borders (expands left, then up)
-    '&::after': {
-      bottom: 0,
-      right: 0,
-    },
+    transition: theme.transitions.create('border', {
+      duration: theme.transitions.duration.shortest,
+    }),
     '&:hover': {
-      color: theme.palette.common.white,
-    },
-    // Hover styles
-    '&:hover::before, &:hover::after': {
-      width: '100%',
-      height: '100%',
-    },
-    '&:hover::before': {
-      borderTopColor: theme.palette.common.white, // Make borders visible
-      borderRightColor: theme.palette.common.white,
-      transition: '"width 0.25s ease-out", "height 0.25s ease-out 0.25s"', // And then height
-    },
-    '&:hover::after': {
-      borderBottomColor: theme.palette.common.white, // Make borders visible
-      borderLeftColor: theme.palette.common.white,
-      transition:
-        '"border-color 0s ease-out 0.5s", "width 0.25s ease-out 0.5s", "height 0.25s ease-out 0.75s"', // And finally height
+      border: '3px solid white',
     },
   },
   imageMarked: {

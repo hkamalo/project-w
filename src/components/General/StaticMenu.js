@@ -27,11 +27,15 @@ const theme = createTheme({
 const useStyles = makeStyles({
   menu: {
     width: '100vw',
-    height: '15vh',
+    height: '8vh',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
     color: '#fff',
+    padding: 0,
+    position: 'fixed',
+    top : 0,
+    zIndex: 999,
     [theme.breakpoints.down('sm')]: {
       diplay: 'flex',
       alignItems: 'center',
@@ -40,12 +44,10 @@ const useStyles = makeStyles({
     },
   },
   links: {
-    zIndex: 999,
     position: 'absolute',
     background: '#fff',
-    margin: 0,
     width: '100vw',
-    height: '15vh',
+    height: '10vh',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',

@@ -22,7 +22,6 @@ export default function Main() {
   return (
     <>
       <main className={classes.main}>
-        <StaticMenu />
         <Route exact path="/">
           <Screen>
             <HomePage />
