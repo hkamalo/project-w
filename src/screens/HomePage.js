@@ -70,7 +70,8 @@ const useStyles = makeStyles({
   explicationConcept: {
     width: '100vw',
     margin: '15em 0 0em 0',
-    height: '100vh',
+    paddingTop :'0em',
+    height: '40vh',
     display: 'flex',
     justifyContent: 'flex-start',
     opacity: 0.9,

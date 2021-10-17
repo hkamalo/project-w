@@ -10,30 +10,30 @@ const images = [
   {
     url: normalDress,
     title: 'Quotidien',
-    width: '100%',
+    width: '20vw',
   },
   {
     url: partyDress,
     title: 'Soirée',
-    width: '100%',
+    width: '20vw',
   },
   {
     url: kidsDress,
     title: 'Enfant',
-    width: '100%',
+    width: '20vw',
   },
 ];
 
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
-    flexWrap: 'wrap',
-    minWidth: 300,
-    width: '100%',
+    justifyContent: 'center',
+    width: '100vw',
   },
   image: {
     position: 'relative',
-    height: 200,
+    margin: '10em',
+    height: '30vh',
     [theme.breakpoints.down('xs')]: {
       width: '100% !important', // Overrides inline-style
       height: 100,
