@@ -68,21 +68,20 @@ const useStyles = makeStyles({
   },
   explicationConcept: {
     width: '60vw',
-    marginTop: '10vh',
+    margin: '15em 0 0 0',
     height: '10vh',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    background: '#2A0800',
     opacity: 0.9,
   },
   text2: {
     margin: 10,
     width: '70%',
     fontFamily: 'Quicksand, sans-serif',
-    fontSize: 20,
+    fontSize: 60,
     textAlign: 'center',
-    color: '#FFFAEC',
+    color: '#2A0800',
   },
 });
 
