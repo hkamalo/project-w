@@ -108,7 +108,11 @@ export default function HomePage() {
           </div>
         </div>
         <div className={classes.explicationConcept}>
-          <img className={classes.sewingImg} src={sewingThreadImg} alt="dress-home" />
+          <img
+            className={classes.sewingImg}
+            src={sewingThreadImg}
+            alt="dress-home"
+          />
           <p className={classes.text2}>
             {' '}
             Une idée, une envie ?
